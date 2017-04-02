@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gridCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridCategories"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No categories found, Please try again!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResults"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/style_border_button"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:text="@string/tryagain"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>
